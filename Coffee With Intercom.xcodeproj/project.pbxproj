@@ -3,16 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043AA0D723D75E7A00CC326F /* customers.txt in Resources */ = {isa = PBXBuildFile; fileRef = 043AA0D623D75E7A00CC326F /* customers.txt */; };
+		043AA0DA23D764AF00CC326F /* CustomerAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043AA0D923D764AF00CC326F /* CustomerAnnotation.swift */; };
+		043AA0DC23D7664B00CC326F /* IntercomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043AA0DB23D7664B00CC326F /* IntercomAnnotation.swift */; };
+		043AA0DE23D7778500CC326F /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043AA0DD23D7778500CC326F /* ImageUtils.swift */; };
 		04ECC38523D73643004B5EAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC38423D73643004B5EAC /* AppDelegate.swift */; };
 		04ECC38723D73643004B5EAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC38623D73643004B5EAC /* SceneDelegate.swift */; };
 		04ECC38C23D73643004B5EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECC38A23D73643004B5EAC /* Main.storyboard */; };
 		04ECC38E23D73647004B5EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ECC38D23D73647004B5EAC /* Assets.xcassets */; };
 		04ECC39123D73647004B5EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECC38F23D73647004B5EAC /* LaunchScreen.storyboard */; };
 		04ECC39C23D73648004B5EAC /* Coffee_With_IntercomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC39B23D73648004B5EAC /* Coffee_With_IntercomTests.swift */; };
+		04ECC3AA23D7425C004B5EAC /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC3A923D7425C004B5EAC /* MapVC.swift */; };
+		04ECC3AC23D742A0004B5EAC /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC3AB23D742A0004B5EAC /* FileReader.swift */; };
+		04ECC3AE23D743FD004B5EAC /* LocationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC3AD23D743FD004B5EAC /* LocationUtils.swift */; };
+		04ECC3B123D7452A004B5EAC /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC3B023D7452A004B5EAC /* Customer.swift */; };
+		04ECC3B523D746F6004B5EAC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC3B323D746F6004B5EAC /* APIManager.swift */; };
+		04ECC3B623D746F6004B5EAC /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC3B423D746F6004B5EAC /* APIConstants.swift */; };
+		04ECC3B823D74738004B5EAC /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC3B723D74738004B5EAC /* Commons.swift */; };
+		04ECC3BA23D7474B004B5EAC /* JSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC3B923D7474B004B5EAC /* JSONUtils.swift */; };
+		7271BF3448384AF99A82948D /* Pods_Coffee_With_IntercomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973351AE4FFDB5FE30E16BFD /* Pods_Coffee_With_IntercomTests.framework */; };
+		DC1762402A0DD0ACCAA94DCC /* Pods_Coffee_With_Intercom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29CE8711DD6112C6B8612EBA /* Pods_Coffee_With_Intercom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043AA0D623D75E7A00CC326F /* customers.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = customers.txt; sourceTree = "<group>"; };
+		043AA0D923D764AF00CC326F /* CustomerAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerAnnotation.swift; sourceTree = "<group>"; };
+		043AA0DB23D7664B00CC326F /* IntercomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercomAnnotation.swift; sourceTree = "<group>"; };
+		043AA0DD23D7778500CC326F /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 		04ECC38123D73643004B5EAC /* Coffee With Intercom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee With Intercom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ECC38423D73643004B5EAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04ECC38623D73643004B5EAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +54,20 @@
 		04ECC39723D73648004B5EAC /* Coffee With IntercomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffee With IntercomTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ECC39B23D73648004B5EAC /* Coffee_With_IntercomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_With_IntercomTests.swift; sourceTree = "<group>"; };
 		04ECC39D23D73648004B5EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04ECC3A923D7425C004B5EAC /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		04ECC3AB23D742A0004B5EAC /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		04ECC3AD23D743FD004B5EAC /* LocationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationUtils.swift; sourceTree = "<group>"; };
+		04ECC3B023D7452A004B5EAC /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		04ECC3B323D746F6004B5EAC /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		04ECC3B423D746F6004B5EAC /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		04ECC3B723D74738004B5EAC /* Commons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		04ECC3B923D7474B004B5EAC /* JSONUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONUtils.swift; sourceTree = "<group>"; };
+		29CE8711DD6112C6B8612EBA /* Pods_Coffee_With_Intercom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffee_With_Intercom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EF397A7AD0E3975B4061000 /* Pods-Coffee With Intercom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee With Intercom.release.xcconfig"; path = "Target Support Files/Pods-Coffee With Intercom/Pods-Coffee With Intercom.release.xcconfig"; sourceTree = "<group>"; };
+		6F92BB7ACE898E50CC5AA377 /* Pods-Coffee With IntercomTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee With IntercomTests.release.xcconfig"; path = "Target Support Files/Pods-Coffee With IntercomTests/Pods-Coffee With IntercomTests.release.xcconfig"; sourceTree = "<group>"; };
+		973351AE4FFDB5FE30E16BFD /* Pods_Coffee_With_IntercomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffee_With_IntercomTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD81A9BDFA612F20259EAE80 /* Pods-Coffee With IntercomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee With IntercomTests.debug.xcconfig"; path = "Target Support Files/Pods-Coffee With IntercomTests/Pods-Coffee With IntercomTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEB1A775EA8AB2834E5EB458 /* Pods-Coffee With Intercom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee With Intercom.debug.xcconfig"; path = "Target Support Files/Pods-Coffee With Intercom/Pods-Coffee With Intercom.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1762402A0DD0ACCAA94DCC /* Pods_Coffee_With_Intercom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +83,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7271BF3448384AF99A82948D /* Pods_Coffee_With_IntercomTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043AA0D523D75E4C00CC326F /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				043AA0D623D75E7A00CC326F /* customers.txt */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		043AA0D823D7648F00CC326F /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				043AA0D923D764AF00CC326F /* CustomerAnnotation.swift */,
+				043AA0DB23D7664B00CC326F /* IntercomAnnotation.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
 		04ECC37823D73643004B5EAC = {
 			isa = PBXGroup;
 			children = (
 				04ECC38323D73643004B5EAC /* Coffee With Intercom */,
 				04ECC39A23D73648004B5EAC /* Coffee With IntercomTests */,
 				04ECC38223D73643004B5EAC /* Products */,
+				A961D2CEC625829F5E530185 /* Pods */,
+				EFF5580088C7EAC1A470FD5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +130,10 @@
 		04ECC38323D73643004B5EAC /* Coffee With Intercom */ = {
 			isa = PBXGroup;
 			children = (
+				043AA0D823D7648F00CC326F /* Annotations */,
+				043AA0D523D75E4C00CC326F /* Supporting files */,
+				04ECC3B223D746DC004B5EAC /* Networking */,
+				04ECC3AF23D7451B004B5EAC /* Models */,
 				04ECC3A823D736D2004B5EAC /* View Controllers */,
 				04ECC3A723D736CB004B5EAC /* Utils */,
 				04ECC3A623D7366C004B5EAC /* Storyboards */,
@@ -109,6 +166,11 @@
 		04ECC3A723D736CB004B5EAC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				04ECC3B923D7474B004B5EAC /* JSONUtils.swift */,
+				04ECC3B723D74738004B5EAC /* Commons.swift */,
+				04ECC3AB23D742A0004B5EAC /* FileReader.swift */,
+				04ECC3AD23D743FD004B5EAC /* LocationUtils.swift */,
+				043AA0DD23D7778500CC326F /* ImageUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -116,8 +178,46 @@
 		04ECC3A823D736D2004B5EAC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04ECC3A923D7425C004B5EAC /* MapVC.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		04ECC3AF23D7451B004B5EAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04ECC3B023D7452A004B5EAC /* Customer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04ECC3B223D746DC004B5EAC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				04ECC3B423D746F6004B5EAC /* APIConstants.swift */,
+				04ECC3B323D746F6004B5EAC /* APIManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A961D2CEC625829F5E530185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1A775EA8AB2834E5EB458 /* Pods-Coffee With Intercom.debug.xcconfig */,
+				3EF397A7AD0E3975B4061000 /* Pods-Coffee With Intercom.release.xcconfig */,
+				CD81A9BDFA612F20259EAE80 /* Pods-Coffee With IntercomTests.debug.xcconfig */,
+				6F92BB7ACE898E50CC5AA377 /* Pods-Coffee With IntercomTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFF5580088C7EAC1A470FD5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29CE8711DD6112C6B8612EBA /* Pods_Coffee_With_Intercom.framework */,
+				973351AE4FFDB5FE30E16BFD /* Pods_Coffee_With_IntercomTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04ECC3A023D73648004B5EAC /* Build configuration list for PBXNativeTarget "Coffee With Intercom" */;
 			buildPhases = (
+				BFD496E0FD70342F0B232BDA /* [CP] Check Pods Manifest.lock */,
 				04ECC37D23D73643004B5EAC /* Sources */,
 				04ECC37E23D73643004B5EAC /* Frameworks */,
 				04ECC37F23D73643004B5EAC /* Resources */,
+				1688776C00110CD6163935F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04ECC3A323D73648004B5EAC /* Build configuration list for PBXNativeTarget "Coffee With IntercomTests" */;
 			buildPhases = (
+				77E4A08C937B0922C28438DE /* [CP] Check Pods Manifest.lock */,
 				04ECC39323D73648004B5EAC /* Sources */,
 				04ECC39423D73648004B5EAC /* Frameworks */,
 				04ECC39523D73648004B5EAC /* Resources */,
@@ -201,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043AA0D723D75E7A00CC326F /* customers.txt in Resources */,
 				04ECC39123D73647004B5EAC /* LaunchScreen.storyboard in Resources */,
 				04ECC38E23D73647004B5EAC /* Assets.xcassets in Resources */,
 				04ECC38C23D73643004B5EAC /* Main.storyboard in Resources */,
@@ -216,13 +320,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1688776C00110CD6163935F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coffee With Intercom/Pods-Coffee With Intercom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Coffee With Intercom/Pods-Coffee With Intercom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Coffee With Intercom/Pods-Coffee With Intercom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77E4A08C937B0922C28438DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coffee With IntercomTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFD496E0FD70342F0B232BDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coffee With Intercom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04ECC37D23D73643004B5EAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043AA0DA23D764AF00CC326F /* CustomerAnnotation.swift in Sources */,
 				04ECC38523D73643004B5EAC /* AppDelegate.swift in Sources */,
+				04ECC3AA23D7425C004B5EAC /* MapVC.swift in Sources */,
+				04ECC3AC23D742A0004B5EAC /* FileReader.swift in Sources */,
+				04ECC3B123D7452A004B5EAC /* Customer.swift in Sources */,
+				043AA0DE23D7778500CC326F /* ImageUtils.swift in Sources */,
+				04ECC3B823D74738004B5EAC /* Commons.swift in Sources */,
+				04ECC3B623D746F6004B5EAC /* APIConstants.swift in Sources */,
 				04ECC38723D73643004B5EAC /* SceneDelegate.swift in Sources */,
+				04ECC3BA23D7474B004B5EAC /* JSONUtils.swift in Sources */,
+				04ECC3AE23D743FD004B5EAC /* LocationUtils.swift in Sources */,
+				04ECC3B523D746F6004B5EAC /* APIManager.swift in Sources */,
+				043AA0DC23D7664B00CC326F /* IntercomAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +559,7 @@
 		};
 		04ECC3A123D73648004B5EAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEB1A775EA8AB2834E5EB458 /* Pods-Coffee With Intercom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +578,7 @@
 		};
 		04ECC3A223D73648004B5EAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF397A7AD0E3975B4061000 /* Pods-Coffee With Intercom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -416,6 +597,7 @@
 		};
 		04ECC3A423D73648004B5EAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD81A9BDFA612F20259EAE80 /* Pods-Coffee With IntercomTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -438,6 +620,7 @@
 		};
 		04ECC3A523D73648004B5EAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F92BB7ACE898E50CC5AA377 /* Pods-Coffee With IntercomTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
