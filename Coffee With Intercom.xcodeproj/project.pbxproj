@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04ECC38523D73643004B5EAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC38423D73643004B5EAC /* AppDelegate.swift */; };
+		04ECC38723D73643004B5EAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC38623D73643004B5EAC /* SceneDelegate.swift */; };
+		04ECC38C23D73643004B5EAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECC38A23D73643004B5EAC /* Main.storyboard */; };
+		04ECC38E23D73647004B5EAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ECC38D23D73647004B5EAC /* Assets.xcassets */; };
+		04ECC39123D73647004B5EAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ECC38F23D73647004B5EAC /* LaunchScreen.storyboard */; };
+		04ECC39C23D73648004B5EAC /* Coffee_With_IntercomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ECC39B23D73648004B5EAC /* Coffee_With_IntercomTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04ECC39823D73648004B5EAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04ECC37923D73643004B5EAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04ECC38023D73643004B5EAC;
+			remoteInfo = "Coffee With Intercom";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04ECC38123D73643004B5EAC /* Coffee With Intercom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee With Intercom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04ECC38423D73643004B5EAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04ECC38623D73643004B5EAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04ECC38B23D73643004B5EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04ECC38D23D73647004B5EAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04ECC39023D73647004B5EAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04ECC39223D73647004B5EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04ECC39723D73648004B5EAC /* Coffee With IntercomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffee With IntercomTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04ECC39B23D73648004B5EAC /* Coffee_With_IntercomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee_With_IntercomTests.swift; sourceTree = "<group>"; };
+		04ECC39D23D73648004B5EAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04ECC37E23D73643004B5EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ECC39423D73648004B5EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04ECC37823D73643004B5EAC = {
+			isa = PBXGroup;
+			children = (
+				04ECC38323D73643004B5EAC /* Coffee With Intercom */,
+				04ECC39A23D73648004B5EAC /* Coffee With IntercomTests */,
+				04ECC38223D73643004B5EAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04ECC38223D73643004B5EAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04ECC38123D73643004B5EAC /* Coffee With Intercom.app */,
+				04ECC39723D73648004B5EAC /* Coffee With IntercomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04ECC38323D73643004B5EAC /* Coffee With Intercom */ = {
+			isa = PBXGroup;
+			children = (
+				04ECC3A823D736D2004B5EAC /* View Controllers */,
+				04ECC3A723D736CB004B5EAC /* Utils */,
+				04ECC3A623D7366C004B5EAC /* Storyboards */,
+				04ECC38423D73643004B5EAC /* AppDelegate.swift */,
+				04ECC38623D73643004B5EAC /* SceneDelegate.swift */,
+				04ECC38D23D73647004B5EAC /* Assets.xcassets */,
+				04ECC39223D73647004B5EAC /* Info.plist */,
+			);
+			path = "Coffee With Intercom";
+			sourceTree = "<group>";
+		};
+		04ECC39A23D73648004B5EAC /* Coffee With IntercomTests */ = {
+			isa = PBXGroup;
+			children = (
+				04ECC39B23D73648004B5EAC /* Coffee_With_IntercomTests.swift */,
+				04ECC39D23D73648004B5EAC /* Info.plist */,
+			);
+			path = "Coffee With IntercomTests";
+			sourceTree = "<group>";
+		};
+		04ECC3A623D7366C004B5EAC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				04ECC38A23D73643004B5EAC /* Main.storyboard */,
+				04ECC38F23D73647004B5EAC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		04ECC3A723D736CB004B5EAC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		04ECC3A823D736D2004B5EAC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04ECC38023D73643004B5EAC /* Coffee With Intercom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04ECC3A023D73648004B5EAC /* Build configuration list for PBXNativeTarget "Coffee With Intercom" */;
+			buildPhases = (
+				04ECC37D23D73643004B5EAC /* Sources */,
+				04ECC37E23D73643004B5EAC /* Frameworks */,
+				04ECC37F23D73643004B5EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coffee With Intercom";
+			productName = "Coffee With Intercom";
+			productReference = 04ECC38123D73643004B5EAC /* Coffee With Intercom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04ECC39623D73648004B5EAC /* Coffee With IntercomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04ECC3A323D73648004B5EAC /* Build configuration list for PBXNativeTarget "Coffee With IntercomTests" */;
+			buildPhases = (
+				04ECC39323D73648004B5EAC /* Sources */,
+				04ECC39423D73648004B5EAC /* Frameworks */,
+				04ECC39523D73648004B5EAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04ECC39923D73648004B5EAC /* PBXTargetDependency */,
+			);
+			name = "Coffee With IntercomTests";
+			productName = "Coffee With IntercomTests";
+			productReference = 04ECC39723D73648004B5EAC /* Coffee With IntercomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04ECC37923D73643004B5EAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Kalpesh;
+				TargetAttributes = {
+					04ECC38023D73643004B5EAC = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					04ECC39623D73648004B5EAC = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 04ECC38023D73643004B5EAC;
+					};
+				};
+			};
+			buildConfigurationList = 04ECC37C23D73643004B5EAC /* Build configuration list for PBXProject "Coffee With Intercom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04ECC37823D73643004B5EAC;
+			productRefGroup = 04ECC38223D73643004B5EAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04ECC38023D73643004B5EAC /* Coffee With Intercom */,
+				04ECC39623D73648004B5EAC /* Coffee With IntercomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04ECC37F23D73643004B5EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04ECC39123D73647004B5EAC /* LaunchScreen.storyboard in Resources */,
+				04ECC38E23D73647004B5EAC /* Assets.xcassets in Resources */,
+				04ECC38C23D73643004B5EAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ECC39523D73648004B5EAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04ECC37D23D73643004B5EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04ECC38523D73643004B5EAC /* AppDelegate.swift in Sources */,
+				04ECC38723D73643004B5EAC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04ECC39323D73648004B5EAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04ECC39C23D73648004B5EAC /* Coffee_With_IntercomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04ECC39923D73648004B5EAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04ECC38023D73643004B5EAC /* Coffee With Intercom */;
+			targetProxy = 04ECC39823D73648004B5EAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04ECC38A23D73643004B5EAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04ECC38B23D73643004B5EAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04ECC38F23D73647004B5EAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04ECC39023D73647004B5EAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04ECC39E23D73648004B5EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04ECC39F23D73648004B5EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04ECC3A123D73648004B5EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6TT5CTNU4;
+				INFOPLIST_FILE = "Coffee With Intercom/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Coffee-With-Intercom";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04ECC3A223D73648004B5EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6TT5CTNU4;
+				INFOPLIST_FILE = "Coffee With Intercom/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Coffee-With-Intercom";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04ECC3A423D73648004B5EAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6TT5CTNU4;
+				INFOPLIST_FILE = "Coffee With IntercomTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Coffee-With-IntercomTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coffee With Intercom.app/Coffee With Intercom";
+			};
+			name = Debug;
+		};
+		04ECC3A523D73648004B5EAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T6TT5CTNU4;
+				INFOPLIST_FILE = "Coffee With IntercomTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.Coffee-With-IntercomTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coffee With Intercom.app/Coffee With Intercom";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04ECC37C23D73643004B5EAC /* Build configuration list for PBXProject "Coffee With Intercom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04ECC39E23D73648004B5EAC /* Debug */,
+				04ECC39F23D73648004B5EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04ECC3A023D73648004B5EAC /* Build configuration list for PBXNativeTarget "Coffee With Intercom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04ECC3A123D73648004B5EAC /* Debug */,
+				04ECC3A223D73648004B5EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04ECC3A323D73648004B5EAC /* Build configuration list for PBXNativeTarget "Coffee With IntercomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04ECC3A423D73648004B5EAC /* Debug */,
+				04ECC3A523D73648004B5EAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04ECC37923D73643004B5EAC /* Project object */;
+}
