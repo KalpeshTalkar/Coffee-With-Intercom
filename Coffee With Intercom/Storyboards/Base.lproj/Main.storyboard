@@ -18,9 +18,19 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zdb-vb-fE8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2T-Vd-i0H">
+                                <rect key="frame" x="65" y="794" width="284" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="See all customers within 100 km range">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z2T-Vd-i0H" secondAttribute="bottom" constant="30" id="1mY-Tj-zIZ"/>
+                            <constraint firstItem="z2T-Vd-i0H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dys-Eq-EJp"/>
                             <constraint firstItem="Zdb-vb-fE8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sx3-Hm-CoI"/>
                             <constraint firstItem="Zdb-vb-fE8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="c1b-ML-RxX"/>
                             <constraint firstAttribute="bottom" secondItem="Zdb-vb-fE8" secondAttribute="bottom" id="td8-LL-9P8"/>
@@ -30,11 +40,28 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Zdb-vb-fE8" id="Aos-UY-iJ7"/>
+                        <segue destination="QwU-Da-cH4" kind="show" id="pnF-Tz-Wug"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TQg-gf-T5x">
+            <objects>
+                <viewController id="QwU-Da-cH4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mUj-kF-8rg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gSW-Up-SyD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="chK-4f-24f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUg-UP-hS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="139"/>
         </scene>
     </scenes>
 </document>
