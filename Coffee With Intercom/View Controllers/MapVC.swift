@@ -17,23 +17,28 @@ class MapVC: UIViewController {
     @IBOutlet private weak var mapView: MKMapView!
     
     let fileReader = FileReader()
+    var readFromRemoteTextFile = false
 
     // MARK: - Life cycle methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMap()
-        
-        let hud = MBProgressHUD.showAdded(to: view, animated: true)
-        hud.label.text = "Reading customers..."
-        fileReader.readCustomersFromRemoteFile { (customers) in
-            hud.hide(animated: true)
-            self.showCustomersOnMap(customers: customers)
+        if readFromRemoteTextFile {
+            let hud = MBProgressHUD.showAdded(to: view, animated: true)
+            hud.label.text = "Reading customers..."
+            fileReader.readCustomersFromRemoteFile { (customers) in
+                hud.hide(animated: true)
+                /*customers.forEach { (customer) in
+                    LocationUtils().isWithin100KmFromDublinOffice(latitude: customer.latitude, longitude: customer.longitude)
+                }*/
+                self.showCustomersOnMap(customers: customers)
+            }
+        } else {
+            fileReader.readCustomersFromBundle { (customers) in
+                self.showCustomersOnMap(customers: customers)
+            }
         }
-        
-        /*fileReader.readCustomersFromBundle { (customers) in
-            self.showCustomersOnMap(customers: customers)
-        }*/
     }
     
     private func setupMap() {
