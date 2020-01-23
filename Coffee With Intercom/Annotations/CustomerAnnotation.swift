@@ -23,7 +23,7 @@ class CustomerAnnotation: NSObject, MKAnnotation {
         title = customer.name
         subtitle = "Id: \(customer.userId)"
         self.coordinate = CLLocationCoordinate2D(latitude: customer.latitude, longitude: customer.longitude)
-        if CLLocation(latitude: customer.latitude, longitude: customer.longitude).isWithin100KmsFromDublinOffice() {
+        if LocationUtils().isWithin100KmFromDublinOffice(latitude: customer.latitude, longitude: customer.longitude) {
             image = image?.color(color: UIColor.systemGreen.withAlphaComponent(0.7))
         } else {
             image = image?.color(color: UIColor.systemOrange.withAlphaComponent(0.7))
