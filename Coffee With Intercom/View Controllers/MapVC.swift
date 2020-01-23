@@ -18,6 +18,8 @@ class MapVC: UIViewController {
     
     let fileReader = FileReader()
     var readFromRemoteTextFile = false
+    var customers = [Customer]()
+    let locationUtils = LocationUtils()
 
     // MARK: - Life cycle methods
     
@@ -29,14 +31,13 @@ class MapVC: UIViewController {
             hud.label.text = "Reading customers..."
             fileReader.readCustomersFromRemoteFile { (customers) in
                 hud.hide(animated: true)
-                /*customers.forEach { (customer) in
-                    LocationUtils().isWithin100KmFromDublinOffice(latitude: customer.latitude, longitude: customer.longitude)
-                }*/
-                self.showCustomersOnMap(customers: customers)
+                self.customers = customers
+                self.showCustomersOnMap()
             }
         } else {
             fileReader.readCustomersFromBundle { (customers) in
-                self.showCustomersOnMap(customers: customers)
+                self.customers = customers
+                self.showCustomersOnMap()
             }
         }
     }
@@ -47,6 +48,19 @@ class MapVC: UIViewController {
         mapView.setCenter(IntercomDublinLocation.coordinate, animated: true)
         let circle = MKCircle(center: IntercomDublinLocation.coordinate, radius: 100000 as CLLocationDistance) // 100000 m = 100 km
         mapView.addOverlay(circle)
+        recenterMap()
+    }
+    
+    private func showCustomersOnMap() {
+        let annotations = customers.map { (customer) -> CustomerAnnotation in
+            return CustomerAnnotation(customer: customer)
+        }
+        mapView.addAnnotations(annotations)
+    }
+    
+    // MARK: - IBActions
+    
+    @IBAction private func recenterMap() {
         var region = MKCoordinateRegion()
         region.center = IntercomDublinLocation.coordinate
         region.span.latitudeDelta = 3.5
@@ -55,11 +69,14 @@ class MapVC: UIViewController {
         mapView.setRegion(adjustedRegion, animated: true)
     }
     
-    private func showCustomersOnMap(customers: [Customer]) {
-        let annotations = customers.map { (customer) -> CustomerAnnotation in
-            return CustomerAnnotation(customer: customer)
+    @IBAction private func showCustomerList() {
+        if let customerListVC = Storyboard.Main.viewController(of: CustomersVC.self) {
+            // Filter customers in 100 km range and sorted by user id in the ascending order.
+            customerListVC.customers = customers.filter({ (customer) -> Bool in
+                return locationUtils.isWithin100KmFromDublinOffice(latitude: customer.latitude, longitude: customer.longitude)
+            }).sorted(by: { $0.userId < $1.userId  })
+            present(customerListVC, animated: true, completion: nil)
         }
-        mapView.addAnnotations(annotations)
     }
 
 }

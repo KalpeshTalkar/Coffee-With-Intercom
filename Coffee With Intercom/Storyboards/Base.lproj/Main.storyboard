@@ -19,49 +19,90 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2T-Vd-i0H">
-                                <rect key="frame" x="65" y="794" width="284" height="38"/>
+                                <rect key="frame" x="20" y="794" width="374" height="38"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" title="See all customers within 100 km range">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="showCustomerList" destination="BYZ-38-t0r" eventType="touchUpInside" id="Car-tk-dqt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz2-B5-nBY">
+                                <rect key="frame" x="305" y="736" width="89" height="38"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Re-center">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="recenterMap" destination="BYZ-38-t0r" eventType="touchUpInside" id="zK8-M6-eLi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z2T-Vd-i0H" secondAttribute="bottom" constant="30" id="1mY-Tj-zIZ"/>
-                            <constraint firstItem="z2T-Vd-i0H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dys-Eq-EJp"/>
+                            <constraint firstItem="Zz2-B5-nBY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="JfI-gW-HHv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zz2-B5-nBY" secondAttribute="trailing" constant="20" id="P57-On-qgf"/>
+                            <constraint firstItem="z2T-Vd-i0H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="S7j-xM-L52"/>
                             <constraint firstItem="Zdb-vb-fE8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sx3-Hm-CoI"/>
                             <constraint firstItem="Zdb-vb-fE8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="c1b-ML-RxX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z2T-Vd-i0H" secondAttribute="trailing" constant="20" id="owY-Xj-Nf6"/>
                             <constraint firstAttribute="bottom" secondItem="Zdb-vb-fE8" secondAttribute="bottom" id="td8-LL-9P8"/>
+                            <constraint firstItem="z2T-Vd-i0H" firstAttribute="top" secondItem="Zz2-B5-nBY" secondAttribute="bottom" constant="20" id="vWR-UR-L1U"/>
                             <constraint firstItem="Zdb-vb-fE8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yAx-Aw-sva"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="Zdb-vb-fE8" id="Aos-UY-iJ7"/>
-                        <segue destination="QwU-Da-cH4" kind="show" id="pnF-Tz-Wug"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--CustomersVC-->
         <scene sceneID="TQg-gf-T5x">
             <objects>
-                <viewController id="QwU-Da-cH4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomersVC" id="QwU-Da-cH4" customClass="CustomersVC" customModule="Coffee_With_Intercom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mUj-kF-8rg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customers invited for coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvx-A5-KCr">
+                                <rect key="frame" x="84.5" y="30" width="245" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q06-Fh-Ygv">
+                                <rect key="frame" x="0.0" y="84" width="414" height="724"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Q06-Fh-Ygv" firstAttribute="top" secondItem="Zvx-A5-KCr" secondAttribute="bottom" constant="30" id="AYj-tv-x42"/>
+                            <constraint firstItem="Zvx-A5-KCr" firstAttribute="top" secondItem="gSW-Up-SyD" secondAttribute="top" constant="30" id="EfE-Rn-53g"/>
+                            <constraint firstItem="Q06-Fh-Ygv" firstAttribute="bottom" secondItem="gSW-Up-SyD" secondAttribute="bottom" id="GfX-ot-hkV"/>
+                            <constraint firstItem="Zvx-A5-KCr" firstAttribute="centerX" secondItem="mUj-kF-8rg" secondAttribute="centerX" id="jCB-Be-Dwl"/>
+                            <constraint firstItem="gSW-Up-SyD" firstAttribute="trailing" secondItem="Q06-Fh-Ygv" secondAttribute="trailing" id="wQe-5i-nxL"/>
+                            <constraint firstItem="Q06-Fh-Ygv" firstAttribute="leading" secondItem="gSW-Up-SyD" secondAttribute="leading" id="yrC-WA-hqS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="gSW-Up-SyD"/>
                     </view>
                     <navigationItem key="navigationItem" id="chK-4f-24f"/>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="table" destination="Q06-Fh-Ygv" id="R2T-wX-8s7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUg-UP-hS9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="139"/>
+            <point key="canvasLocation" x="992.75362318840587" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
