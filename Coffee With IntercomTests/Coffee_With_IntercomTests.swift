@@ -9,25 +9,48 @@
 import XCTest
 @testable import Coffee_With_Intercom
 
+var sut: FileReader!
+
 class Coffee_With_IntercomTests: XCTestCase {
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        sut = FileReader()
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        super.tearDown()
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testReadingRemoteCustomers() {
+        let promise = expectation(description: "Read Remote Customers")
+        sut.readCustomersFromRemoteFile { (customers) in
+            if customers.isEmpty {
+                XCTFail("Failed to read remote customers")
+            } else {
+                promise.fulfill()
+            }
+        }
+        wait(for: [promise], timeout: 10)
+    }
+    
+    func testReadingLocalCustomers() {
+        let promise = expectation(description: "Read Local Customers")
+        sut.readCustomersFromBundle { (customers) in
+            if customers.isEmpty {
+                XCTFail("Failed to read local customers")
+            } else {
+                promise.fulfill()
+            }
+        }
+        wait(for: [promise], timeout: 2)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
+    func testPerformance() {
         self.measure {
-            // Put the code you want to measure the time of here.
+            testReadingRemoteCustomers()
+            testReadingLocalCustomers()
         }
     }
 
