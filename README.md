@@ -2,7 +2,7 @@
 A simple iOS application that reads all the customers from a .txt file and invites all the customers withing 100km range of Intercom office in Dublin.
 
 # Steps to run the app
-1. Clone the project and switch to dev branch.
+1. Clone the project.
 2. Open terminal and run the command ```pod install``` or ```pod update``` (If you need to update your version of cocoapods)
 Install cocoapods ```$ sudo gem install cocoapod```. Refer here: https://guides.cocoapods.org/using/getting-started.html
 3. Open ```Coffee With Intercom.xcworkspace``` and run the app on any iOS device or iOS simulator.
@@ -29,3 +29,16 @@ func distanceBetween(latitude1: Double, longitude1: Double, latitude2: Double, l
 ```
 
 The distance calculated from the above formula was test by comparing with the distance result using ```CLLocation.distance(from: CLLocation)``` and the results matched 🥳.
+
+# Output (Screenshots)
+![Map](https://github.com/KalpeshTalkar/Coffee-With-Intercom/blob/master/Screenshots/Map%20-%20Customers%20in%20100%20km.PNG)
+
+![Intercom Office Highlighted](https://github.com/KalpeshTalkar/Coffee-With-Intercom/blob/master/Screenshots/Intercom%20Office%20Highlighted.PNG)
+
+![Highlighted customer within 100 km](https://github.com/KalpeshTalkar/Coffee-With-Intercom/blob/master/Screenshots/Highlighted%20Customer%20in%20100km%20.PNG)
+
+![Highlighted customer outside 100 km](https://github.com/KalpeshTalkar/Coffee-With-Intercom/blob/master/Screenshots/Highlighted%20Customer%20outside%20100%20km.PNG)
+
+![Customer List within 100 km (1)](https://github.com/KalpeshTalkar/Coffee-With-Intercom/blob/master/Screenshots/Customer%20List%20in%20100%20km%20(1).PNG)
+
+![Customer List within 100 km (2)](https://github.com/KalpeshTalkar/Coffee-With-Intercom/blob/master/Screenshots/Customer%20List%20in%20100%20km%20(2).PNG)
